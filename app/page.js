@@ -25,7 +25,7 @@ export default function Home() {
         <div className=" -ml-40 flex justify-around items-center h-full w-full mr-64">
           <div className="pt-14 text-center">
             <Link legacyBehavior href="/ourArtist">
-              <a className="text-7xl font-bold text-gray-100">OUR ARTISTS</a>
+              <a className="text-7xl text-gray-100 font-semibold">OUR ARTISTS</a>
             </Link>
             <div className="mt-2">
               <Link legacyBehavior href="/artist1"><a className="text-2xl text-gray-100 mx-2">TRENCHCOATGORDY</a></Link>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="pt-14 text-center">
             <Link legacyBehavior href="/aboutUs">
-              <a className="text-7xl font-bold text-gray-100">ABOUT US</a>
+              <a className="text-7xl text-gray-100 font-semibold">ABOUT US</a>
             </Link>
             <div className="mt-2">
               <Link legacyBehavior href="/faq"><a className="text-2xl text-gray-100 mx-2">FAQ</a></Link>
@@ -50,8 +50,8 @@ export default function Home() {
       </header>
       <main className="flex flex-col items-center justify-center h-screen" style={{ marginTop: '-5%' }}>
   <div className="text-center px-4 space-y-2 md:space-y-3">
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-100">
-    <div className="flex justify-center text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-100">
+    <h1 className="text-3xl md:text-4xl lg:text- text-gray-100">
+    <div className="flex justify-center text-4xl md:text-5xl lg:text-6xl text-gray-100">
   <span style={{ background: 'linear-gradient(to right, darkgray, lightgray)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Local Roots.</span>
   <span className="pl-2">Global Reach.</span>
 </div>
