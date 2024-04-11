@@ -1,7 +1,7 @@
 "use client"
 import Head from 'next/head';
 import { useEffect } from 'react';
-import Header from './components/Header';
+import Header from '../app/components/Header';
 
 export default function Home() {
   useEffect(() => {
