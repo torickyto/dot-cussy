@@ -14,6 +14,12 @@
     font-family: 'NATS Regular', sans-serif;
   }
 
+  @media screen and (max-width: 850px){/* for screens smaller then 850px, set the font size smaller */
+    h2{
+      font-size:19px;
+    }
+ }
+
   .text-shadow {
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
   }
@@ -42,3 +48,15 @@
     box-shadow: none;
     top: 4px;
   }
+
+  .blur-effect {
+    animation: blurAnimation .5s forwards;
+  }
+  
+  @keyframes blurAnimation {
+    to {
+      filter: blur(5px);
+    }
+  }
+
+  
