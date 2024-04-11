@@ -16,7 +16,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full flex items-center px-4 z-10" style={{ height: '16vh', background: 'linear-gradient(to bottom, #333, #000)' }}>
       <Link legacyBehavior href="/">
         <a>
-        <img src="/dotcussyPatch.png" alt="logo" className="mr-2" style={{ height: '210px', width: '440px', marginLeft: '-64px'}} />
+        <img src="/dotcussyPatch.png" alt="logo" className="mr-2" style={{ minHeight: '210px', height: '210px', width: '310px', minWidth: '310px', marginLeft: '-64px'}} />
         </a>
         </Link>
       
