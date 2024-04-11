@@ -20,7 +20,7 @@ const Header = () => {
         </a>
         </Link>
       
-      <div className=" -ml-40 flex justify-around items-center h-full w-full mr-64">
+        <div className=" -ml-40 flex justify-around items-center h-full w-full mr-64">
         <div className="pt-14 text-center">
           <Link legacyBehavior href="/ourArtist">
             <a className="text-9xl text-gray-100 text-shadow-right">OUR ARTISTS</a>
