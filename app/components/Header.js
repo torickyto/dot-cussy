@@ -44,7 +44,7 @@ const Header = () => {
   </a>
                     </Link>
                     
-                    <div className={` ml-auto link-group ${centerFocus === 'right' ? 'blur' : 'off-center-left'} transition`}>
+                    <div className={` ml-auto link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
                         <Link legacyBehavior href="/ourArtist">
                             <a className="sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
                         </Link>

@@ -50,12 +50,12 @@
   }
 
   .blur-effect {
-    animation: blurAnimation 1s forwards;
+    animation: blurAnimation .5s forwards;
   }
   
   @keyframes blurAnimation {
     to {
-      filter: blur(4px);
+      filter: blur(5px);
     }
   }
 

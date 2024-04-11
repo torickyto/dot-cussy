@@ -22,7 +22,7 @@ export default function Home() {
         <title>dot cussy</title>
       </Head>
       <Header />
-      <main className="flex flex-col items-center justify-center h-screen" style={{ marginTop: '-5%' }}>
+      <main className="flex flex-col items-center justify-center h-screen">
   <div className="text-center px-4 space-y-2 md:space-y-3">
     <h1 className="text-3xl md:text-4xl lg:text-5xl text-gray-100">
     <div className="flex justify-center text-4xl md:text-5xl lg:text-6xl text-gray-100">
