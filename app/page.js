@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import { signIn } from "next-auth/react";
 
 export default function Home() {
   useEffect(() => {
@@ -45,6 +46,7 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute top-4 right-4">
+        <button onClick={() => signIn("spotify")} className="button-3d carved-text text-xl md:text-2xl lg:text-3xl px-12 py-2 mt-6">sign in with Spotify</button>
         <button class="button-3d carved-text text-xl md:text-2xl lg:text-3xl px-12 py-2 mt-6">sign in</button>
         </div>
       </header>
