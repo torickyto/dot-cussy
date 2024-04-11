@@ -25,13 +25,13 @@ module.exports = {
           textShadow: '6px 3px 3px rgba(100, 100, 100, 1)',
         },
         '.text-shadow-right-small': {
-          textShadow: '4px 3px 3px rgba(120, 120, 120, 1)',
+          textShadow: '3px 3px 2px rgba(120, 120, 120, 1)',
         },
         '.text-shadow-left': {
           textShadow: '-6px 3px 3px rgba(100, 100, 100, 1)',
         },
         '.text-shadow-left-small': {
-          textShadow: '-3px 2px 3px rgba(120, 120, 120, 1)',
+          textShadow: '-3px 3px 2px rgba(120, 120, 120, 1)',
         },
       }
       addUtilities(newUtilities, ['responsive', 'hover']);
