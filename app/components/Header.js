@@ -1,11 +1,25 @@
 "use client"
+import { useState } from 'react';
 import Link from 'next/link';
 import SignInButton from './SignInButton';
 
 const Header = () => {
+    // State to manage whether the animation should play
+    const [centerFocus, setCenterFocus] = useState('');
+  
+    // Function to handle click events and set the focus
+    const handleFocus = (focus) => {
+      setCenterFocus(focus);
+    };
+
   return (
     <header className="fixed top-0 left-0 w-full flex items-center px-4 z-10" style={{ height: '16vh', background: 'linear-gradient(to bottom, #333, #000)' }}>
-      <img src="/dotcussyPatch.png" alt="logo" className="mr-2" style={{ height: '100%', marginLeft: '-64px'}} />
+      <Link legacyBehavior href="/">
+        <a>
+        <img src="/dotcussyPatch.png" alt="logo" className="mr-2" style={{ height: '210px', width: '440px', marginLeft: '-64px'}} />
+        </a>
+        </Link>
+      
       <div className=" -ml-40 flex justify-around items-center h-full w-full mr-64">
         <div className="pt-14 text-center">
           <Link legacyBehavior href="/ourArtist">

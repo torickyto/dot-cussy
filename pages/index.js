@@ -26,7 +26,7 @@ export default function Home() {
     <h1 className="text-3xl md:text-4xl lg:text- text-gray-100">
     <div className="flex justify-center text-4xl md:text-5xl lg:text-6xl text-gray-100">
     <span className="text-shadow">
-    <div className="flex justify-center text-5xl md:text-6xl lg:text-7xl text-gray-100 tracking-wider">
+    <div className="flex justify-center text-5xl md:text-6xl lg:text-7xl text-gray-100 mt-44 tracking-wider">
   <span style={{ background: 'linear-gradient(to right, darkgray, lightgray)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
     Local Roots.
   </span>
