@@ -61,3 +61,20 @@
   }
 
   
+  .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.carousel-item {
+    flex: none;
+    width: 200px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}

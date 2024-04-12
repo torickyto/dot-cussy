@@ -1,43 +1,28 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React, { useEffect, useState } from 'react';
 
-const ArtistCarousel = ({ artists }) => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
+const ArtistCarousel = () => {
+    const [artists, setArtists] = useState([]);
+
+    useEffect(() => {
+        const fetchArtists = async () => {
+            const response = await fetch('/api/artists');
+            const data = await response.json();
+            setArtists(data);
+        };
+
+        fetchArtists();
+    }, []);
 
     return (
-        <Slider {...settings}>
-            {artists.map((artist, index) => (
-                <div key={index} className="p-4">
-                    <img src={artist.spotifyImage} alt={artist.name} className="block mx-auto"/>
-                    <p className="text-center text-white">{artist.name}</p>
+        <div className="carousel-container">
+            {Array.isArray(artists) ? artists.map(artist => (
+                <div key={artist.spotifyId} className="carousel-item">
+                    <img src={artist.imageUrl} alt={artist.name} />
+                    <h3>{artist.name}</h3>
                 </div>
-            ))}
-        </Slider>
+            )) : <p>No artists found</p>}
+        </div>
     );
-};
+}
 
 export default ArtistCarousel;

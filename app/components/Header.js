@@ -39,11 +39,11 @@ const Header = () => {
                 md:w-[313px] md:min-w-[313px] md:h-[212px] md:min-h-[212px]
                 xl:w-[330px] xl:min-w-[330px] xl:h-[225px] xl:min-h-[225px]"
     />
-  </a>
+                </a>
                     </Link>
                     
                     <div className={` ml-auto -mb-12 link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
-                        <Link legacyBehavior href="/ourArtist">
+                        <Link legacyBehavior href="/ourArtists">
                             <a className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
                         </Link>
                         <div className="-mt-14 text-shadow-right-small sm:text-xl md:text-2xl xl:text-3xl text-gray-100">
@@ -63,7 +63,6 @@ const Header = () => {
                             <Link legacyBehavior href="/contact"><a className="mx-4">CONTACT</a></Link>
                         </div>
                     </div>
-
                     <div className="flex-initial">
                         <SignInButton />
                     </div>
