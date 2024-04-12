@@ -9,7 +9,6 @@ const authOptions = {
       authorization: {
         params: {
           scope: "streaming user-read-email user-read-private",
-          // Add other scopes needed for your application
         },
       },
     }),

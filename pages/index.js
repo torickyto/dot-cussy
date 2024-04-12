@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import Header from '../app/components/Header';
+import SignUpButton from '../app/components/SignUpButton';
 
 export default function Home() {
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Home() {
     <img src="/spotifylogo.png" alt="Spotify Logo" className="mx-auto" style={{ maxWidth: '60px', height: 'auto', marginTop: '20px', marginBottom: '75px' }}/>
     <h2 className="text-6xl md:text-7xl lg:text-8xl text-gray-300 tracking-wide">We're scouting. Are you up?</h2>
   </div>
-  <button class="button-3d carved-text text-3xl md:text-5xl lg:text-6xl">sign up</button></main>
+  <SignUpButton/></main>
     </>
   );
 }
