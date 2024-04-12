@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Header from '../app/components/Header'; // Adjust the path as necessary
+import Header from '../app/components/Header'; 
+import SignUpButton from '@/app/components/SignUpButton';
 
 export default function AboutUs() {
   return (
@@ -27,12 +28,7 @@ export default function AboutUs() {
             We're here to give the city's music a platform and its artists a voice,
             creating a network where artists support artists, blending genres and styles in ways that haven’t been heard before.
           </p>
-          <button 
-            className="mt-4 button-3d carved-text text-3xl md:text-4xl lg:text-5xl px-12 py-2"
-            onClick={() => { /* Define sign-up action here */ }}
-          >
-            Sign Up
-          </button>
+          <SignUpButton/>
         </div>
       </main>
     </>

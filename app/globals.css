@@ -27,6 +27,7 @@
   .carved-text {
     font-family: 'NATS Regular', sans-serif;
     color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
   }
   .button-3d {
     position: relative;

@@ -35,31 +35,29 @@ const Header = () => {
                         <a className="flex-initial">
                         <img src="/dotcussyPatch.png" alt="logo"
          className="mr-2 ml-[-64px]
-                w-[610px] min-w-[610px] h-[410px] min-h-[410px]
-                sm:w-[333px] sm:min-w-[333px] sm:h-[222px] sm:min-h-[222px]
-                md:w-[4390px] md:min-w-[390px] md:h-[270px] md:min-h-[270px]
-                lg:w-[510px] lg:min-w-[510px] lg:h-[345px] lg:min-h-[345px]
-                xl:w-[610px] xl:min-w-[610px] xl:h-[410px] xl:min-h-[410px]"
+                sm:w-[210px] sm:min-w-[210px] sm:h-[150px] sm:min-h-[150px]
+                md:w-[313px] md:min-w-[313px] md:h-[212px] md:min-h-[212px]
+                xl:w-[330px] xl:min-w-[330px] xl:h-[225px] xl:min-h-[225px]"
     />
   </a>
                     </Link>
                     
-                    <div className={` ml-auto link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
+                    <div className={` ml-auto -mb-12 link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
                         <Link legacyBehavior href="/ourArtist">
-                            <a className="sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
+                            <a className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
                         </Link>
-                        <div className="-mt-14 text-shadow-right-small sm:text-3xl md:text-4xl xl:text-5xl text-gray-100">
+                        <div className="-mt-14 text-shadow-right-small sm:text-xl md:text-2xl xl:text-3xl text-gray-100">
                             <Link legacyBehavior href="/artist1"><a className="mx-4">TRENCHCOATGORDY</a></Link>
                             <Link legacyBehavior href="/artist2"><a className="mx-6">DEATHCON3</a></Link>
                             <Link legacyBehavior href="/artist3"><a className="mx-4">BANFFWILLY</a></Link>
                         </div>
                     </div>
 
-                    <div className={` mr-auto link-group ${centerFocus === 'left' ? 'blur' : 'off-center-right'} transition`}>
+                    <div className={` mr-auto -mb-12 link-group ${centerFocus === 'left' ? 'blur' : 'off-center-right'} transition`}>
                         <Link legacyBehavior href="/aboutUs">
-                            <a className="sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-12xl text-gray-100 text-shadow-left mb-12">ABOUT US </a>
+                            <a className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-left mb-12">ABOUT US </a>
                         </Link>
-                        <div className="-mt-14 text-shadow-left-small sm:text-3xl md:text-4xl xl:text-5xl text-gray-100">
+                        <div className="-mt-14 text-shadow-left-small sm:text-xl md:text-2xl xl:text-3xl text-gray-100">
                             <Link legacyBehavior href="/faq"><a className="mx-4">FAQ</a></Link>
                             <Link legacyBehavior href="/applications"><a className="mx-11">APPLICATIONS</a></Link>
                             <Link legacyBehavior href="/contact"><a className="mx-4">CONTACT</a></Link>
