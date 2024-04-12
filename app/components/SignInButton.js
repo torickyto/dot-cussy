@@ -16,7 +16,7 @@ const SignInButton = () => {
 
   return (
     <>
-      <button onClick={handleAuthClick} className="button-3d carved-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+      <button onClick={handleAuthClick} className="button-3d carved-text text-xl md:text-2xl lg:text-3xl xl:text-4xl">
         {session ? `sign out (${session.user.name})` : "sign in"}
       </button>
       {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const ArtistCarousel = () => {
     const [artists, setArtists] = useState([]);
@@ -13,14 +16,40 @@ const ArtistCarousel = () => {
         fetchArtists();
     }, []);
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    };
+
     return (
-        <div className="carousel-container">
-            {Array.isArray(artists) ? artists.map(artist => (
-                <div key={artist.spotifyId} className="carousel-item">
-                    <img src={artist.imageUrl} alt={artist.name} />
-                    <h3>{artist.name}</h3>
-                </div>
-            )) : <p>No artists found</p>}
+        <div style={{ padding: '20px' }}>
+            <Slider {...settings}>
+                {Array.isArray(artists) ? artists.map(artist => (
+                    <div key={artist.spotifyId}>
+                        <div style={{ margin: '10px', textAlign: 'center' }}>
+                            <img src={artist.imageUrl} alt={artist.name} style={{ width: '300px', height: '300px', borderRadius: '100%' }} />
+                            <h3 className="text-white text-4xl -ml-16">{artist.name}</h3>
+                        </div>
+                    </div>
+                )) : <p>No artists found</p>}
+            </Slider>
         </div>
     );
 }

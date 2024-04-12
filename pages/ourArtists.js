@@ -55,7 +55,7 @@ const OurArtists = () => {
             </Head>
             <Header />
             <main className="bg-black flex flex-col items-center justify-center h-screen">
-                <div className="space-y-8 max-w-4xl p-8 text-center">
+                <div className="space-y-8 max-w-7xl p-8 text-center">
                     <h1 className="text-white text-5xl font-bold mb-8">Our Artists</h1>
                     <ArtistCarousel artists={artists} />
                     <input
@@ -65,9 +65,11 @@ const OurArtists = () => {
                         onChange={e => setArtistId(e.target.value)}
                         className="text-black p-3 rounded-lg mb-4 w-full max-w-xl"
                     />
-                    <button onClick={handleAddArtist} className="bg-green-700 text-white text-3xl px-6 py-3 rounded-full">
+                    <div>
+                    <button onClick={handleAddArtist} className="button-3d carved-text text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                         Add Artist
                     </button>
+                    </div>
                 </div>
             </main>
         </>
