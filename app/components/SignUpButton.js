@@ -6,8 +6,8 @@ export default function SignUpButton() {
 
     return (
         <>
-            <button className="bg-green-500 text-white rounded-full px-4 py-2" onClick={() => setShowForm(!showForm)}>
-                Sign Up
+            <button className="button-3d carved-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl" onClick={() => setShowForm(!showForm)}>
+                sign up
             </button>
             {showForm && <SignUpForm />}
         </>
