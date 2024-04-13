@@ -23,7 +23,7 @@ const ArtistHeader = ({ artist }) => {
                         </a>
                     </Link>
                     <Link legacyBehavior href="/">
-                        <a className="flex-initial -mt-36">
+                        <a className="flex-initial mr-36 -mt-32">
                             <img src="/dotcussyPatch.png" alt="logo" className="h-32 w-auto" />
                         </a>
                     </Link>
