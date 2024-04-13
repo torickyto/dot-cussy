@@ -1,17 +1,21 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import SpotifyProvider from "next-auth/providers/spotify";
-import dbConnect from "../../../lib/mongodb"; 
+import dbConnect from "../../../lib/mongodb";
 import User from "../../../models/User";
-import bcrypt from 'bcryptjs';
+import bcrypt from "bcryptjs";
 
 export default NextAuth({
   providers: [
     CredentialsProvider({
-      name: 'Credentials',
+      name: "Credentials",
       credentials: {
-        email: { label: "Email", type: "email", placeholder: "email@example.com" },
-        password: { label: "Password", type: "password" }
+        email: {
+          label: "Email",
+          type: "email",
+          placeholder: "email@example.com",
+        },
+        password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
         await dbConnect();
@@ -19,14 +23,16 @@ export default NextAuth({
         if (user && bcrypt.compareSync(credentials.password, user.password)) {
           return { id: user.id, name: user.name, email: user.email };
         }
-        throw new Error('No user found with the entered credentials');
-      }
+        throw new Error("No user found with the entered credentials");
+      },
     }),
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID,
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-      authorization: { params: { scope: "streaming user-read-email user-read-private" } }
-    })
+      authorization: {
+        params: { scope: "streaming user-read-email user-read-private" },
+      },
+    }),
   ],
   callbacks: {
     jwt: async ({ token, user }) => {
@@ -40,6 +46,6 @@ export default NextAuth({
       session.user.id = token.id;
       session.user.email = token.email;
       return session;
-    }
-  }
+    },
+  },
 });
