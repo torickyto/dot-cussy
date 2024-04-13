@@ -19,20 +19,11 @@ export default function AboutUs() {
       >
         <div className="space-y-8 max-w-7xl">
           <p className="text-4xl md:text-5xl text-gray-300">
-            Our aim is to unearth and uplift the incredible talents scattered
-            across Calgary, giving this city, rich with diverse sounds and
-            stories, a platform built on the idea that every artist deserves to
-            be heard.
+           made by ricky   
           </p>
-          <p className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-widest">
-            We spotlight artists and make connections. Simple as that.
+          <p className="text-4xl md:text-5xl text-gray-300">
+           for webdev2  
           </p>
-          <p className="text-3xl md:text-4xl lg:text-5xl text-gray-300">
-            We're here to give the city's music a platform and its artists a
-            voice, creating a network where artists support artists, blending
-            genres and styles in ways that haven’t been heard before.
-          </p>
-          <SignUpButton />
         </div>
         <Footer/>
       </main>

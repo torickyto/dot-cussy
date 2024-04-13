@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import ArtistHeader from '../../app/components/ArtistHeader';
+import Footer from '../../app/components/Footer';
 
 const ArtistPage = () => {
     const router = useRouter();
@@ -63,6 +64,7 @@ const ArtistPage = () => {
                         ))}
                     </div>
                 </div>
+                <Footer/>
             </main>
         </>
     );
