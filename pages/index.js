@@ -42,7 +42,7 @@ export default function Home() {
     <img src="/spotifylogo.png" alt="Spotify Logo" className="mx-auto" style={{ maxWidth: '60px', height: 'auto', marginTop: '20px', marginBottom: '75px' }}/>
     <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-300 tracking-wide">We're scouting. Are you up?</h2>
   </div>
-  <div className= "mt-7">
+  <div className= "mt-6">
   <SignUpButton/></div></main>
     </>
   );

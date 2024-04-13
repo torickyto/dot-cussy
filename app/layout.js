@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         width: '100vw'
       }}>
         <NextAuthProviders>
-          <div className="max-w-4xl mx-auto">
+          <div className=" max-w-4xl mx-auto">
             {children}
           </div>
         </NextAuthProviders>
