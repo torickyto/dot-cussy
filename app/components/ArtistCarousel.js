@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link';
 
 const ArtistCarousel = () => {
     const [artists, setArtists] = useState([]);
@@ -41,14 +42,16 @@ const ArtistCarousel = () => {
     return (
         <div style={{ padding: '20px' }}>
             <Slider {...settings}>
-                {Array.isArray(artists) ? artists.map(artist => (
-                    <div key={artist.spotifyId}>
-                        <div style={{ margin: '10px', textAlign: 'center' }}>
-                            <img src={artist.imageUrl} alt={artist.name} style={{ width: '300px', height: '300px', borderRadius: '100%' }} />
-                            <h3 className="text-white text-4xl -ml-16">{artist.name}</h3>
-                        </div>
-                    </div>
-                )) : <p>No artists found</p>}
+            {artists.map(artist => (
+  <Link legacyBehavior key={artist.spotifyId} href={`/artist/${artist.spotifyId}`}>
+    <a>
+      <div style={{ margin: '10px', textAlign: 'center' }}>
+        <img src={artist.imageUrl} alt={artist.name} style={{ width: '300px', height: '300px', borderRadius: '100%' }} />
+        <h3 className="text-white text-4xl">{artist.name}</h3>
+      </div>
+    </a>
+  </Link>
+))}
             </Slider>
         </div>
     );
