@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../app/components/Header";
+import Footer from "../app/components/Footer";
 import SignUpButton from "@/app/components/SignUpButton";
 
 export default function AboutUs() {
@@ -33,6 +34,7 @@ export default function AboutUs() {
           </p>
           <SignUpButton />
         </div>
+        <Footer/>
       </main>
     </>
   );

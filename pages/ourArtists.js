@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../app/components/Header";
+import Footer from "../app/components/Footer";
 import ArtistCarousel from "../app/components/ArtistCarousel";
 
 const getSpotifyAccessToken = async () => {
@@ -94,6 +95,7 @@ const OurArtists = () => {
             </button>
           </div>
         </div>
+        <Footer/>
       </main>
     </>
   );

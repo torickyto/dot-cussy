@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import Header from "../app/components/Header";
+import Footer from "../app/components/Footer";
 import SignUpButton from "../app/components/SignUpButton";
 
 export default function Home() {
@@ -65,6 +66,7 @@ export default function Home() {
         <div className="mt-6">
           <SignUpButton />
         </div>
+        <Footer />
       </main>
     </>
   );
