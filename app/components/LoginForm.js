@@ -61,6 +61,7 @@ export default function LoginForm({ onClose }) {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full p-3 rounded-lg"
+              style={{ color: 'black' }}
             />
           </div>
           <div className="flex justify-between items-center">

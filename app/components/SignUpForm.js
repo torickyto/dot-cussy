@@ -125,6 +125,7 @@ export default function SignUpForm({ onClose }) {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
             className="w-full rounded-lg p-3"
+            style={{ color: 'black' }}
           />
 
           {message && (
