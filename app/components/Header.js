@@ -42,18 +42,18 @@ const Header = () => {
                 </a>
                     </Link>
                     
-                    <div className={` ml-auto -mb-12 link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
+                    <div className={`ml-auto mr-24 -mb-12 link-group ${centerFocus === 'right' ? 'blur' : 'off-center-right'} transition`}>
                         <Link legacyBehavior href="/ourArtists">
-                            <a className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
+                            <a className="-ml-24 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-right mb-12">OUR ARTISTS</a>
                         </Link>
-                        <div className="-mt-14 text-shadow-right-small sm:text-xl md:text-2xl xl:text-3xl text-gray-100">
+                        <div className="-ml-24 -mt-14 text-shadow-right-small sm:text-xl md:text-2xl xl:text-3xl text-gray-100">
                             <Link legacyBehavior href="/artist1"><a className="mx-4">TRENCHCOATGORDY</a></Link>
                             <Link legacyBehavior href="/artist2"><a className="mx-6">DEATHCON3</a></Link>
                             <Link legacyBehavior href="/artist3"><a className="mx-4">BANFFWILLY</a></Link>
                         </div>
                     </div>
 
-                    <div className={` mr-auto -mb-12 link-group ${centerFocus === 'left' ? 'blur' : 'off-center-right'} transition`}>
+                    <div className={` mr-auto -mb-12 link-group ${centerFocus === 'left' ? 'blur' : 'off-center-left'} transition`}>
                         <Link legacyBehavior href="/aboutUs">
                             <a className="sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl text-gray-100 text-shadow-left mb-12">ABOUT US </a>
                         </Link>

@@ -1,11 +1,12 @@
+// ArtistPage.js
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Header from '../../app/components/Header';
+import ArtistHeader from '../../app/components/ArtistHeader';  // Make sure the import path is correct
 
 const ArtistPage = () => {
     const router = useRouter();
-    const { id } = router.query; // This captures the ID from the URL
+    const { id } = router.query;
     const [artist, setArtist] = useState(null);
 
     useEffect(() => {
@@ -19,6 +20,7 @@ const ArtistPage = () => {
             }).then(res => res.json());
             setArtist(artistData);
         };
+
         fetchArtistData();
     }, [id]);
 
@@ -31,7 +33,7 @@ const ArtistPage = () => {
             <Head>
                 <title>{artist.name}</title>
             </Head>
-            <Header />
+            <ArtistHeader artist={artist} />
             <div style={{ color: 'white', textAlign: 'center', padding: '20px' }}>
                 <h1>{artist.name}</h1>
                 <img src={artist.images[0].url} alt={artist.name} style={{ width: '200px', borderRadius: '100px' }} />
