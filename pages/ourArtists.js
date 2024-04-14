@@ -1,3 +1,5 @@
+//displays a list of artists fetched from an API and provides a form to add new artists by their Spotify ID
+
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Header from "../app/components/Header";

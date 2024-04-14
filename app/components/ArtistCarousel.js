@@ -1,3 +1,12 @@
+/**
+ * ArtistCarousel component displays a carousel of artists fetched from Spotify's API.
+ * It uses react-slick for the carousel functionality.
+ * 
+ * The component fetches artist data from "/api/artists" endpoint.
+ * It renders a Slider component from react-slick to display artists in a carousel format.
+ * Each artist is rendered as a slide in the carousel with their image and name, linked to their respective artist page.
+ */
+
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

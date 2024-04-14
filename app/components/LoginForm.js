@@ -1,3 +1,8 @@
+/**
+ * LoginForm component renders a login form allowing users to log in with email/password or Spotify.
+ * It uses next-auth/react to handle authentication.
+ */
+
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 

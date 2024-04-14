@@ -1,3 +1,4 @@
+//schema for artists
 import mongoose from "mongoose";
 
 const artistSchema = new mongoose.Schema({

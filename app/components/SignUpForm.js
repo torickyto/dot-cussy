@@ -1,3 +1,7 @@
+/**
+ * SignUpForm component handles the registration form for signing up new users.
+ * It collects user details (role, name, email, genre, Spotify link, password) and performs form validation and submission.
+ */
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 

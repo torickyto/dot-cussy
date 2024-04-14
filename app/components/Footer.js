@@ -1,3 +1,7 @@
+/**
+ * Just a footer.
+ */
+
 import React from 'react';
 
 const Footer = () => {
@@ -10,7 +14,7 @@ const Footer = () => {
             backgroundColor: 'black',
             color: 'white',
             textAlign: 'center',
-            opacity: 0.8, // Set the opacity to low
+            opacity: 0.8,
             padding: '10px 0'
         }}>
             © 2024 Dot Cussy. All rights reserved.

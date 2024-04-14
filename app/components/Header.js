@@ -1,3 +1,9 @@
+/**
+ * Header component renders the main header section.
+ * It includes navigation links, a logo, and a sign-in button.
+ * The appearance and layout of the header adjust based on the current route.
+ */
+
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -8,6 +14,7 @@ const Header = () => {
   const router = useRouter();
   const [centerFocus, setCenterFocus] = useState("none");
 
+// Determine which headings to blur based on the current route
   useEffect(() => {
     let focusState = "none";
     if (
@@ -24,6 +31,7 @@ const Header = () => {
       focusState = "right";
     }
 
+// Update the blur based on route
     setCenterFocus(focusState);
   }, [router.pathname]);
 
@@ -75,7 +83,7 @@ const Header = () => {
               />
             </a>
           </Link>
-
+  {/* Render the link group for 'Our Artists' or other pages */}
           <div
             className={`mr-auto ml-28 -mb-12 link-group ${centerFocus === "right" ? "blur" : ""}`}
           >
@@ -97,6 +105,7 @@ const Header = () => {
             </div>
           </div>
 
+{/* Render the link group for 'About Us' or other pages */}
           <div
             className={`mr-auto -mb-12 link-group ${centerFocus === "left" ? "blur" : ""}`}
           >
