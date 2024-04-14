@@ -1,6 +1,11 @@
-import { useState } from "react"; // Make sure to import useState
+/**
+ * SignInButton component handles user authentication state and displays a sign-in/sign-out button.
+ * It uses next-auth/react to manage authentication.
+ */
+
+import { useState } from "react"; 
 import { signIn, signOut, useSession } from "next-auth/react";
-import LoginForm from "./LoginForm"; // Ensure LoginForm is correctly imported
+import LoginForm from "./LoginForm"; 
 
 const SignInButton = () => {
   const { data: session } = useSession();

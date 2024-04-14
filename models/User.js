@@ -1,3 +1,4 @@
+//schema for user accounts
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({

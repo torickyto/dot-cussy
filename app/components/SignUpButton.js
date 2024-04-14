@@ -1,3 +1,8 @@
+/**
+ * SignUpButton component manages the visibility of the sign-up form.
+ * It toggles the display of the sign-up form based on user interaction.
+ */
+
 import { useState } from "react";
 import SignUpForm from "./SignUpForm.js";
 

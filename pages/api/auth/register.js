@@ -1,10 +1,11 @@
+//for registering a new user
 import dbConnect from "../../../lib/mongodb";
 import User from "../../../models/User";
 import bcrypt from "bcryptjs";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { name, email, password, role, genre, spotifyLink } = req.body; // Ensure email is destructured
+    const { name, email, password, role, genre, spotifyLink } = req.body;
 
     await dbConnect();
 

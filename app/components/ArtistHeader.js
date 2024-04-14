@@ -1,3 +1,9 @@
+/**
+ * ArtistHeader component renders the header for artist pages.
+ * It includes navigation links, logo, and a sign-in button.
+ * The artist name displayed changes based on the artist.
+ */
+
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -5,6 +11,8 @@ import SignInButton from "./SignInButton";
 
 const ArtistHeader = ({ artist }) => {
   const router = useRouter();
+
+  // Check if the current page is an artist page
   const isArtistPage = router.pathname.includes("/artist/[id]");
 
   const headerStyle = {
@@ -35,6 +43,8 @@ const ArtistHeader = ({ artist }) => {
           </Link>
           <SignInButton />
         </div>
+        
+{/* Render artist name if it's an artist page */}
         {isArtistPage && artist && (
           <div className=" -mt-28 w-full flex justify-center items-end pb-4">
             <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white font-bold">

@@ -1,3 +1,4 @@
+//for retrieving an artist by ID.
 import dbConnect from '../../../lib/mongodb';
 import Artist from '../../../models/Artist';
 

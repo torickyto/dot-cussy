@@ -14,7 +14,7 @@
     font-family: 'NATS Regular', sans-serif;
   }
 
-  @media screen and (max-width: 850px){/* for screens smaller then 850px, set the font size smaller */
+  @media screen and (max-width: 850px){
     h2{
       font-size:19px;
     }

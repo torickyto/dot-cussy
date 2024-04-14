@@ -1,3 +1,4 @@
+//for next auth authetntication
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import SpotifyProvider from "next-auth/providers/spotify";
@@ -17,6 +18,7 @@ export default NextAuth({
         },
         password: { label: "Password", type: "password" },
       },
+      // If credentials are valid, return user data
       async authorize(credentials) {
         await dbConnect();
         const user = await User.findOne({ email: credentials.email });
@@ -42,6 +44,8 @@ export default NextAuth({
       }
       return token;
     },
+
+    // Session callback to populate session user with id and email
     session: async ({ session, token }) => {
       session.user.id = token.id;
       session.user.email = token.email;

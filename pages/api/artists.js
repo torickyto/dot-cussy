@@ -1,3 +1,4 @@
+// for adding and fetching artists in the database
 import dbConnect from "../../lib/mongodb";
 import Artist from "../../models/Artist";
 
