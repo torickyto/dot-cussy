@@ -60,7 +60,7 @@ export default function Home() {
             }}
           />
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-300 tracking-wide">
-            We're scouting. Are you up?
+            We&aposre scouting. Are you up?
           </h2>
         </div>
         <div className="mt-6">
