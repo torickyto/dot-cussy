@@ -28,9 +28,9 @@ export default function AboutUs() {
             We spotlight artists and make connections. Simple as that.
           </p>
           <p className="text-3xl md:text-4xl lg:text-5xl text-gray-300">
-            We're here to give the city's music a platform and its artists a
+            We&aposre here to give the city&aposs music a platform and its artists a
             voice, creating a network where artists support artists, blending
-            genres and styles in ways that haven’t been heard before.
+            genres and styles in ways that haven&apost been heard before.
           </p>
           <SignUpButton />
         </div>
